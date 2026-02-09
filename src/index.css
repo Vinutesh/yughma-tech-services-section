@@ -71,9 +71,9 @@
     overflow-x: hidden;
   }
 
-  body.main-site-theme {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+  body.uiux-project-theme {
+    @apply bg-white text-slate-900;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   ::selection {
