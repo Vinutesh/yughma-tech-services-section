@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
 const BackgroundWrapper = ({ children }: { children: React.ReactNode }) => {
+  useEffect(() => {
+    document.body.classList.add("main-site-theme");
+
+    return () => {
+      document.body.classList.remove("main-site-theme");
+    };
+  }, []);
+
   return (
     <>
       {/* BACKGROUND (does NOT affect layout) */}
