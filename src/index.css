@@ -67,9 +67,13 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    @apply antialiased;
     overflow-x: hidden;
+  }
+
+  body.main-site-theme {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
 
   ::selection {

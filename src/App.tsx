@@ -66,7 +66,6 @@ const App = () => {
               <Route path="/" element={<Index />} />
 
               {/* ================= UI/UX PROJECT ROUTES ================= */}
-
               {/* Academy */}
               <Route path="/projects/yughma-academy" element={<YughmaAcademy />} />
               <Route path="/projects/yughma-academy/apply" element={<YughmaAcademyApply />} />
