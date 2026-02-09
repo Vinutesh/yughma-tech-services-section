@@ -41,6 +41,7 @@ import YughmaWellnessCommunity from "./pages/projects/YughmaWellnessCommunity";
 import YughmaWellnessCommunityReserve from "./pages/projects/YughmaWellnessCommunityReserved";
 import YughmaWellnessRitual from "./pages/projects/YughmaWellnessRitual";
 import YughmaWellnessRitualPlaying from "./pages/projects/YughmaWellnessRitualPlaying";
+import UiuxProjectTheme from "./components/UiuxProjectTheme";
 
 /* ================= SETUP ================= */
 
@@ -66,22 +67,23 @@ const App = () => {
               <Route path="/" element={<Index />} />
 
               {/* ================= UI/UX PROJECT ROUTES ================= */}
+              <Route element={<UiuxProjectTheme />}>
+                {/* Academy */}
+                <Route path="/projects/yughma-academy" element={<YughmaAcademy />} />
+                <Route path="/projects/yughma-academy/apply" element={<YughmaAcademyApply />} />
+                <Route path="/projects/yughma-academy/mentors" element={<YughmaAcademyMentors />} />
+                <Route path="/projects/yughma-academy/outcomes" element={<YughmaAcademyOutcomes />} />
 
-              {/* Academy */}
-              <Route path="/projects/yughma-academy" element={<YughmaAcademy />} />
-              <Route path="/projects/yughma-academy/apply" element={<YughmaAcademyApply />} />
-              <Route path="/projects/yughma-academy/mentors" element={<YughmaAcademyMentors />} />
-              <Route path="/projects/yughma-academy/outcomes" element={<YughmaAcademyOutcomes />} />
+                {/* Finance */}
+                <Route path="/projects/yughma-finance" element={<YughmaFinance />} />
+                <Route path="/projects/yughma-finance/schedule" element={<YughmaFinanceSchedule />} />
+                <Route path="/projects/yughma-finance/confirmation" element={<YughmaFinanceConfirmation />} />
 
-              {/* Finance */}
-              <Route path="/projects/yughma-finance" element={<YughmaFinance />} />
-              <Route path="/projects/yughma-finance/schedule" element={<YughmaFinanceSchedule />} />
-              <Route path="/projects/yughma-finance/confirmation" element={<YughmaFinanceConfirmation />} />
-
-              {/* Events */}
-              <Route path="/projects/yughma-events" element={<YughmaEvents />} />
-              <Route path="/projects/yughma-events/tickets" element={<YughmaEventsTickets />} />
-              <Route path="/projects/yughma-events/checkout" element={<YughmaEventsCheckout />} />
+                {/* Events */}
+                <Route path="/projects/yughma-events" element={<YughmaEvents />} />
+                <Route path="/projects/yughma-events/tickets" element={<YughmaEventsTickets />} />
+                <Route path="/projects/yughma-events/checkout" element={<YughmaEventsCheckout />} />
+              </Route>
 
               {/* Market */}
               <Route path="/projects/yughma-market" element={<YughmaMarket />} />
